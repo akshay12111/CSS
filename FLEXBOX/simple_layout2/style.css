@@ -29,15 +29,15 @@ h1, h2 {
 }
 
 .container {
-    max-height: 1100px;
+    max-width: 1100px;
     margin: 0 auto;
     padding: 0 30;
 }
 
-navbar {
+.navbar {
+    background: #121212;
     color: white;
     height: 60px;
-    background: #121212;
 }
 
 .navbar .container {
@@ -47,17 +47,27 @@ navbar {
     align-items: center;
 }
 
-.navbar h1 {
-    align-self: center;
+.navbar .logo {
+    font-size: x-large;
+    font-weight: bold;
+    margin-right: 20px;
 }
 
-
-.navbar .container ul {
+.navbar ul {
     display: flex;
-    justify-content: start;
+    justify-content: space-between;
     align-items: center;
 }
 
-.navbar li {
+.navbar ul li {
     margin-left: 20px;
+}
+
+.navbar ul li a {
+    color: #56525c;
+}
+
+.navbar ul li a:hover {
+    color: rgb(243, 201, 17);
+    font-size: large;
 }
